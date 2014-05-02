@@ -1,0 +1,21 @@
+{
+  "name": "letsMakeIt",
+  "version": "0.0.0",
+  "authors": [
+    "hayden taylor <hxtaylor1@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout.js": "~3.0.0",
+    "jquery":"latest",
+    "requirejs":"latest"
+  }
+}

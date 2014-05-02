@@ -1,0 +1,40 @@
+{
+  "shims": {
+    "/javascripts/main.js": {}
+  },
+  "deps": {
+    "/javascripts/main.js": [
+      "jquery",
+      "knockout",
+      "script"
+    ],
+    "/javascripts/script.js": [
+      "knockout"
+    ]
+  },
+  "aliases": {
+    "/javascripts/main.js": {
+      "jquery": "vendor/jquery/jquery",
+      "knockout": "vendor/knockout.js/knockout",
+      "script": "script"
+    }
+  },
+  "mappings": {
+    "/javascripts/main.js": null
+  },
+  "packages": {
+    "/javascripts/main.js": null
+  },
+  "originalConfig": {
+    "shim": {},
+    "paths": {
+      "jquery": "vendor/jquery/jquery",
+      "knockout": "vendor/knockout.js/knockout",
+      "script": "script"
+    },
+    "config": {}
+  },
+  "requireFiles": [
+    "/javascripts/main.js"
+  ]
+}
