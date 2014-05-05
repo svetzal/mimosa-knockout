@@ -1,19 +1,15 @@
 requirejs.config({
   config: {
-    
+
   },
   paths: {
-    'jquery': 'vendor/jquery/jquery',
-    'knockout': 'vendor/knockout.js/knockout',
-    'script':'script'
+    'knockout': 'vendor/knockout.js/knockout'
   },
   shim: {
-    
+
   }
 });
 
-require(["jquery","knockout","script"], function($,knockout,script) {
-  
+require(['knockout','viewmodels/fizzybuzz'], function(ko,fizzyBuzzViewModel) {
+	ko.applyBindings(fizzyBuzzViewModel);
 });
-
-

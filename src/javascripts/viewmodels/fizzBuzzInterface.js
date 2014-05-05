@@ -5,14 +5,14 @@ define(['knockout'], function(ko) {
 
 		this.output1 = ko.computed(function() {
 			var value = this.input1();
-			
+
 			var eInput = document.getElementsByTagName("input")[0];
 			var eOutput = document.getElementsByTagName("strong")[0];
-			
-			
+
+
 			if(isNaN(value) === false) {
-				
-				eInput.setAttribute("maxlength","8"); 
+
+				eInput.setAttribute("maxlength","8");
 
 				if(value !== 0 && value !=="") {
 					eOutput.className = "";
@@ -35,7 +35,7 @@ define(['knockout'], function(ko) {
 			else{
 				value = "not valid data";
 				eOutput.className = "colourSwap";
-				eInput.setAttribute("maxlength","0"); 
+				eInput.setAttribute("maxlength","0");
 			}
 			return value;
 
