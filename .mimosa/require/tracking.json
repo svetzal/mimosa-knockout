@@ -4,19 +4,19 @@
   },
   "deps": {
     "/javascripts/main.js": [
-      "jquery",
       "knockout",
-      "script"
+      "viewmodels/fizzybuzz"
     ],
-    "/javascripts/script.js": [
+    "/javascripts/viewmodels/fizzBuzzInterface.js": [
+      "knockout"
+    ],
+    "/javascripts/viewmodels/fizzybuzz.js": [
       "knockout"
     ]
   },
   "aliases": {
     "/javascripts/main.js": {
-      "jquery": "vendor/jquery/jquery",
-      "knockout": "vendor/knockout.js/knockout",
-      "script": "script"
+      "knockout": "vendor/knockout.js/knockout"
     }
   },
   "mappings": {
@@ -28,9 +28,7 @@
   "originalConfig": {
     "shim": {},
     "paths": {
-      "jquery": "vendor/jquery/jquery",
-      "knockout": "vendor/knockout.js/knockout",
-      "script": "script"
+      "knockout": "vendor/knockout.js/knockout"
     },
     "config": {}
   },

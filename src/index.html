@@ -4,7 +4,7 @@
   <title data-localize="title">App1</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi">
-  <link href="stylesheets/site.css" rel="stylesheet" type="text/css">
+  <link href="css/site.css" rel="stylesheet" type="text/css">
   <script data-main="javascripts/main" src="javascripts/vendor/requirejs/require.js"></script>
 </head>
 <body>
@@ -12,12 +12,11 @@
     &nbsp;
   </header>
   <main>
-    
+
     <h1>FizzBuzz Example</h1>
     <p>Based on numbers entered the output changes and if divisable by 3, 5, 15 and 105 special output is displayed</p>
-    <p>Enter a number below --> </p>
-    <input  maxlength="8" data-bind="value: input1, valueUpdate: 'afterkeyup'"/>
-    <p>Output --> </p>
+    <label for="numInput">Enter a number: </label><input  maxlength="8" data-bind="value: input1, valueUpdate: 'afterkeyup'" name="numInput" id="numInput"/>
+    <p>Output: </p>
     <strong class="" data-bind="text: output1"></strong>
 
   </main>
