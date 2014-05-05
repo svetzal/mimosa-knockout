@@ -1,29 +1,29 @@
 {
   "shims": {
-    "/javascripts/main.js": {}
+    "/app/main.js": {}
   },
   "deps": {
-    "/javascripts/main.js": [
+    "/app/main.js": [
       "knockout",
       "viewmodels/fizzybuzz"
     ],
-    "/javascripts/viewmodels/fizzBuzzInterface.js": [
+    "/app/viewmodels/fizzBuzzInterface.js": [
       "knockout"
     ],
-    "/javascripts/viewmodels/fizzybuzz.js": [
+    "/app/viewmodels/fizzybuzz.js": [
       "knockout"
     ]
   },
   "aliases": {
-    "/javascripts/main.js": {
+    "/app/main.js": {
       "knockout": "vendor/knockout.js/knockout"
     }
   },
   "mappings": {
-    "/javascripts/main.js": null
+    "/app/main.js": null
   },
   "packages": {
-    "/javascripts/main.js": null
+    "/app/main.js": null
   },
   "originalConfig": {
     "shim": {},
@@ -33,6 +33,6 @@
     "config": {}
   },
   "requireFiles": [
-    "/javascripts/main.js"
+    "/app/main.js"
   ]
 }
