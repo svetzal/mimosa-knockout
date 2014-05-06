@@ -1,4 +1,4 @@
 [
-  "src/javascripts/vendor/knockout.js/knockout.js",
-  "src/javascripts/vendor/requirejs/require.js"
+  "src/app/vendor/requirejs/require.js",
+  "src/app/vendor/knockout.js/knockout.js"
 ]

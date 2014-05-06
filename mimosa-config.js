@@ -14,6 +14,10 @@ exports.config = {
   watch: {
     sourceDir: 'src',
     compiledDir: 'www',
-    javascriptDir: 'javascripts'
+    javascriptDir: 'app'
+  },
+  vendor: {
+    javascripts: 'app/vendor',
+    stylesheets: 'css/vendor'
   }
 }
