@@ -14,9 +14,17 @@
     "forceLatest": true,
     "exclude": [],
     "unknownMainFullCopy": false,
-    "overridesArrays": {},
+    "overridesArrays": {
+      "jasmine": [
+        "lib/jasmine-core"
+      ]
+    },
     "overridesObjects": {},
-    "mainOverrides": {},
+    "mainOverrides": {
+      "jasmine": [
+        "lib/jasmine-core"
+      ]
+    },
     "pathMod": null
   }
 }

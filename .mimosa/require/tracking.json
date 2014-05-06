@@ -1,38 +1,104 @@
 {
   "shims": {
-    "/app/main.js": {}
+    "/app/main.js": null,
+    "/spec/helper.js": {
+      "jasmine": {
+        "exports": "jasmineRequire"
+      },
+      "jasmine-html": {
+        "deps": [
+          "jasmine"
+        ],
+        "exports": "jasmineRequire"
+      },
+      "boot": {
+        "deps": [
+          "jasmine",
+          "jasmine-html"
+        ],
+        "exports": "jasmineRequire"
+      }
+    }
   },
   "deps": {
     "/app/main.js": [
       "knockout",
       "viewmodels/fizzybuzz"
     ],
-    "/app/viewmodels/fizzBuzzInterface.js": [
-      "knockout"
+    "/app/models/decision.js": [],
+    "/app/models/fizzbuzz.js": [
+      "models/decision"
     ],
     "/app/viewmodels/fizzybuzz.js": [
-      "knockout"
+      "knockout",
+      "models/fizzbuzz"
+    ],
+    "/javascripts/vendor/knockout.js/knockout.js": [
+      "exports"
+    ],
+    "/javascripts/vendor/requirejs/require.js": [],
+    "/spec/decision.js": [
+      "jasmine",
+      "models/decision"
+    ],
+    "/spec/fizzbuzz.js": [
+      "jasmine",
+      "models/fizzbuzz"
+    ],
+    "/spec/helper.js": [
+      "boot",
+      "../spec/decision",
+      "../spec/fizzbuzz"
     ]
   },
   "aliases": {
     "/app/main.js": {
       "knockout": "vendor/knockout.js/knockout"
+    },
+    "/spec/helper.js": {
+      "knockout": "vendor/knockout.js/knockout",
+      "jasmine": "vendor/jasmine/jasmine",
+      "jasmine-html": "vendor/jasmine/jasmine-html",
+      "boot": "vendor/jasmine/boot"
     }
   },
   "mappings": {
-    "/app/main.js": null
+    "/app/main.js": null,
+    "/spec/helper.js": null
   },
   "packages": {
-    "/app/main.js": null
+    "/app/main.js": null,
+    "/spec/helper.js": null
   },
   "originalConfig": {
-    "shim": {},
+    "shim": {
+      "jasmine": {
+        "exports": "jasmineRequire"
+      },
+      "jasmine-html": {
+        "deps": [
+          "jasmine"
+        ],
+        "exports": "jasmineRequire"
+      },
+      "boot": {
+        "deps": [
+          "jasmine",
+          "jasmine-html"
+        ],
+        "exports": "jasmineRequire"
+      }
+    },
     "paths": {
-      "knockout": "vendor/knockout.js/knockout"
+      "knockout": "vendor/knockout.js/knockout",
+      "jasmine": "vendor/jasmine/jasmine",
+      "jasmine-html": "vendor/jasmine/jasmine-html",
+      "boot": "vendor/jasmine/boot"
     },
     "config": {}
   },
   "requireFiles": [
-    "/app/main.js"
+    "/app/main.js",
+    "/spec/helper.js"
   ]
 }

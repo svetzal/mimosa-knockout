@@ -1,12 +1,6 @@
 requirejs.config({
-  config: {
-
-  },
   paths: {
     'knockout': 'vendor/knockout.js/knockout'
-  },
-  shim: {
-
   }
 });
 
