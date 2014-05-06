@@ -14,7 +14,11 @@
     "tests"
   ],
   "dependencies": {
-    "knockout.js": "~3.0.0",
-    "requirejs": "~2.1.11"
+    "knockout.js": "latest",
+    "requirejs": "latest"
+  },
+  "devDependencies": {
+    "less": "latest",
+    "jasmine": "latest"
   }
 }

@@ -3,44 +3,34 @@ define(['knockout'], function(ko) {
 	function FizzyBuzzViewModel() {
 		this.input1 = ko.observable();
 
+		var Decision = function(mod,output){
+			this.mod = mod;
+			this.output = output;
+			this.modChecking = function(input){
+				var finalOutput = "";
+				if (input !== "" && input % this.mod === 0) {
+					finalOutput += this.output;
+				}
+				else{
+					finalOutput = finalOutput;
+				}
+				return finalOutput;
+			};
+		};
+
 		this.output1 = ko.computed(function() {
 			var value = this.input1();
-			return verifyValue(value);
+
+			var a = new Decision(3, "Fizz");
+			var b = new Decision(5, "Buzz");
+			var c = new Decision(7, "Woof");
+
+			var output = a.modChecking(value) + b.modChecking(value) + c.modChecking(value);
+			console.log(value);
+			return output;
 
 		}, this);
 
-		function verifyValue(value){
-			var eInput = document.getElementsByTagName("input")[0];
-			var eOutput = document.getElementsByTagName("strong")[0];
-			if(isNaN(value) === false) {
-
-				eInput.setAttribute("maxlength","8");
-
-				if(value !== 0 && value !=="") {
-					eOutput.className = "";
-					if(value % 105 === 0){
-						value = "FizzBuzzWoof";
-					}
-					if(value % 15 === 0){
-						value = "FizzBuzz";
-					}
-					if(value % 5 === 0){
-						value = "Buzz";
-					}
-					if(value % 3 === 0){
-						value = "Fizz";
-					}
-				}else{
-					value = "" + this.input1();
-				}
-			}
-			else{
-				value = "not valid data";
-				eOutput.className = "colourSwap";
-				eInput.setAttribute("maxlength","0");
-			}
-			return value;
-		}
 	}
 	return new FizzyBuzzViewModel();
 });
