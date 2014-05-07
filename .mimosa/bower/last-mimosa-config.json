@@ -16,13 +16,15 @@
     "unknownMainFullCopy": false,
     "overridesArrays": {
       "jasmine": [
-        "lib/jasmine-core"
+        "lib/jasmine-core/jasmine.css",
+        "lib/jasmine-core/jasmine.js"
       ]
     },
     "overridesObjects": {},
     "mainOverrides": {
       "jasmine": [
-        "lib/jasmine-core"
+        "lib/jasmine-core/jasmine.css",
+        "lib/jasmine-core/jasmine.js"
       ]
     },
     "pathMod": null
