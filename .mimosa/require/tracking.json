@@ -33,10 +33,6 @@
       "knockout",
       "models/fizzbuzz"
     ],
-    "/javascripts/vendor/knockout.js/knockout.js": [
-      "exports"
-    ],
-    "/javascripts/vendor/requirejs/require.js": [],
     "/spec/decision.js": [
       "jasmine",
       "models/decision"
@@ -71,6 +67,12 @@
     "/spec/helper.js": null
   },
   "originalConfig": {
+    "paths": {
+      "knockout": "vendor/knockout.js/knockout",
+      "jasmine": "vendor/jasmine/jasmine",
+      "jasmine-html": "vendor/jasmine/jasmine-html",
+      "boot": "vendor/jasmine/boot"
+    },
     "shim": {
       "jasmine": {
         "exports": "jasmineRequire"
@@ -88,14 +90,7 @@
         ],
         "exports": "jasmineRequire"
       }
-    },
-    "paths": {
-      "knockout": "vendor/knockout.js/knockout",
-      "jasmine": "vendor/jasmine/jasmine",
-      "jasmine-html": "vendor/jasmine/jasmine-html",
-      "boot": "vendor/jasmine/boot"
-    },
-    "config": {}
+    }
   },
   "requireFiles": [
     "/app/main.js",

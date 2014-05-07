@@ -24,5 +24,5 @@ requirejs.config({
 require(['boot'], function() {
   require(['../spec/decision', '../spec/fizzbuzz'], function() {
     window.onload();
-  })
+  });
 });

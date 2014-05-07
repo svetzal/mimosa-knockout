@@ -9,13 +9,20 @@ define(['models/decision'], function(Decision) {
 				out += this.decisions[i].result(ivar);
 			}
 
-			if(isNaN(out) === false){
-				console.log(out);
+			if(isNaN(ivar)) {
 				out = "Not Valid Data";
+			}
+			else if (parseInt(ivar) === 0) {
+				console.log("here");
+				out = "" + ivar;
 			}
 			else if (out === ""){
 				out = "" + ivar;
 			}
+			else if(ivar.length < 1) {
+				out = "" + ivar;
+			}
+			console.log(ivar);
 			return out;
 		};
 

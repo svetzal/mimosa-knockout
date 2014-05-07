@@ -1,15 +1,7 @@
 [
-  "src/app/vendor/jasmine/Player.js",
-  "src/app/vendor/jasmine/PlayerSpec.js",
-  "src/app/vendor/jasmine/Song.js",
-  "src/app/vendor/jasmine/SpecHelper.js",
-  "src/app/vendor/jasmine/boot.js",
-  "src/app/vendor/jasmine/jasmine-html.js",
   "src/app/vendor/jasmine/jasmine.js",
-  "src/app/vendor/jasmine/json2.js",
   "src/app/vendor/knockout.js/knockout.js",
   "src/app/vendor/less/less-1.7.0.js",
   "src/app/vendor/requirejs/require.js",
-  "src/css/vendor/jasmine/jasmine.css",
-  "src/css/vendor/jasmine/version.rb"
+  "src/css/vendor/jasmine/jasmine.css"
 ]
