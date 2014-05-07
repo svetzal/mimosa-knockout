@@ -4,7 +4,9 @@ define([], function() {
 		this.output = output;
 		this.result = function(input) {
 			var finalOutput = "";
-			if (input % this.mod === 0) finalOutput = this.output;
+			if (input % this.mod === 0) {
+				finalOutput = this.output;
+			}
 			return finalOutput;
 		};
 	};

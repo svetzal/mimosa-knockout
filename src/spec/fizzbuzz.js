@@ -4,9 +4,15 @@ define(['jasmine', 'models/fizzbuzz'], function(jasmine, FizzBuzz) {
 			var fb = new FizzBuzz();
 			expect(fb.result(1)).toEqual("1");
 		});
-		// it("should emit fizz for input 3", function() {
-		// var fb = new FizzBuzz();
-		// expect(fb.result(3)).toEqual("Fizz");
-		// });
+
+		it("should emit 0 for input 0", function() {
+			var fb = new FizzBuzz();
+			expect(fb.result(0)).toEqual(0);
+		});
+
+		it("should emit 'Not Valid Data' for input a", function() {
+			var fb = new FizzBuzz();
+			expect(fb.result('a')).toEqual("Not Valid Data");
+		});
 	});
 });
