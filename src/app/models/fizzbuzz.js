@@ -12,18 +12,36 @@ define(['models/decision'], function(Decision) {
 			if(isNaN(ivar)) {
 				out = "Not Valid Data";
 			}
-			else if (parseInt(ivar) === 0) {
-				console.log("here");
+			else if (isEqualToZero(ivar)) {
 				out = "" + ivar;
 			}
 			else if (out === ""){
 				out = "" + ivar;
 			}
-			else if(ivar.length < 1) {
+			else if(isLengthLessThanOne(ivar)) {
 				out = "" + ivar;
 			}
-			console.log(ivar);
+
 			return out;
+		};
+
+		var isEqualToZero = function(val){
+			var isValZero = false;
+
+			if(parseInt(val) === 0){
+				isValZero = true;
+			}
+			return isValZero;
+		};
+
+		var isLengthLessThanOne = function(val){
+			var isValLengthLessThanOne = false;
+
+			if(val.length < 1){
+				isValLengthLessThanOne = true;
+			}
+
+			return isValLengthLessThanOne;
 		};
 
 		this.decisions.push(new Decision(3, "Fizz"));
