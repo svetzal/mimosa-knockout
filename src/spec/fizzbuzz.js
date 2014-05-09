@@ -12,8 +12,8 @@ define(['jasmine', 'models/fizzbuzz'], function(jasmine, FizzBuzz) {
 
 		it("should emit 0 for input 0000", function() {
 			var fb = new FizzBuzz();
-			expect(fb.result('0000')).toEqual("0000");
-		})
+			expect(fb.result('0000')).toEqual("0");
+		});
 
 		it("should emit 'Not Valid Data' for input a", function() {
 			var fb = new FizzBuzz();

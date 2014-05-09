@@ -67,6 +67,12 @@
     "/spec/helper.js": null
   },
   "originalConfig": {
+    "paths": {
+      "knockout": "vendor/knockout.js/knockout",
+      "jasmine": "vendor/jasmine/jasmine",
+      "jasmine-html": "vendor/jasmine/jasmine-html",
+      "boot": "vendor/jasmine/boot"
+    },
     "shim": {
       "jasmine": {
         "exports": "jasmineRequire"
@@ -84,12 +90,6 @@
         ],
         "exports": "jasmineRequire"
       }
-    },
-    "paths": {
-      "knockout": "vendor/knockout.js/knockout",
-      "jasmine": "vendor/jasmine/jasmine",
-      "jasmine-html": "vendor/jasmine/jasmine-html",
-      "boot": "vendor/jasmine/boot"
     }
   },
   "requireFiles": [

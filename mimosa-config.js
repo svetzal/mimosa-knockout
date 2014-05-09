@@ -24,8 +24,7 @@ exports.config = {
     copy: {
       mainOverrides: {
         "jasmine": [
-          "lib/jasmine-core/jasmine.css",
-          "lib/jasmine-core/jasmine.js"
+          "lib/jasmine-core/"
         ]
       }
     }
