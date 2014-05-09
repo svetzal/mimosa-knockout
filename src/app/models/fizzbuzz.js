@@ -1,52 +1,43 @@
-define(['models/decision'], function(Decision) {
+define(['models/decision','models/utilities'], function(Decision,Utilities) {
 	var FizzBuzz = function() {
 
 		this.decisions = [];
+		var utility = new Utilities();
 
-		this.result = function(ivar) {
-			var out = "";
+		this.result = function(inputValue) {
+
+			var output = "";
+
+			inputValue = utility.trimWhiteSpaceFromString(inputValue);
+
 			for (var i = 0; i < this.decisions.length; i++) {
-				out += this.decisions[i].result(ivar);
+				output += this.decisions[i].result(inputValue);
 			}
 
-			if(isNaN(ivar)) {
-				out = "Not Valid Data";
+			if(isNaN(inputValue)) {
+				output = "Not Valid Data";
 			}
-			else if (isEqualToZero(ivar)) {
-				out = "" + ivar;
+			else if(utility.isEqualToZero(inputValue)) {
+				output = "0";
 			}
-			else if (out === ""){
-				out = "" + ivar;
+			else if(utility.isLengthLessThanOne(inputValue)) {
+				output = "" + inputValue;
 			}
-			else if(isLengthLessThanOne(ivar)) {
-				out = "" + ivar;
+			else if(utility.isEqualToASpace(inputValue)){
+				output= "Not Valid Data";
 			}
-
-			return out;
-		};
-
-		var isEqualToZero = function(val){
-			var isValZero = false;
-
-			if(parseInt(val) === 0){
-				isValZero = true;
-			}
-			return isValZero;
-		};
-
-		var isLengthLessThanOne = function(val){
-			var isValLengthLessThanOne = false;
-
-			if(val.length < 1){
-				isValLengthLessThanOne = true;
+			else if(output === "") {
+				output = "" + inputValue;
 			}
 
-			return isValLengthLessThanOne;
+			return output;
+
 		};
 
 		this.decisions.push(new Decision(3, "Fizz"));
 		this.decisions.push(new Decision(5, "Buzz"));
 		this.decisions.push(new Decision(7, "Woof"));
 	};
+
 	return FizzBuzz;
 });

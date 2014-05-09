@@ -24,7 +24,7 @@ exports.config = {
     copy: {
       mainOverrides: {
         "jasmine": [
-          "lib/jasmine-core/"
+          "lib/jasmine-core"
         ]
       }
     }
