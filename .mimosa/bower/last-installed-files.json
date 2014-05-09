@@ -1,4 +1,7 @@
 [
+  "src/app/vendor/jasmine/jasmine.js",
+  "src/app/vendor/knockout.js/knockout.js",
+  "src/app/vendor/less/less-1.7.0.js",
   "src/app/vendor/requirejs/require.js",
-  "src/app/vendor/knockout.js/knockout.js"
+  "src/css/vendor/jasmine/jasmine.css"
 ]
