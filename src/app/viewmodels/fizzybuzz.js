@@ -1,5 +1,3 @@
-//FizzBuzz view model
-
 define(['knockout','models/fizzbuzz'], function(ko, FizzBuzz) {
 	function FizzyBuzzViewModel() {
 
