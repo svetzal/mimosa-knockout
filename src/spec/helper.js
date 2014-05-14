@@ -22,7 +22,7 @@ requirejs.config({
 });
 
 require(['boot'], function() {
-  require(['../spec/decision', '../spec/fizzbuzz'], function() {
+  require(['../spec/decision', '../spec/fizzbuzz','../spec/utilities'], function() {
     window.onload();
   });
 });
