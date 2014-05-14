@@ -9,18 +9,28 @@
 </head>
 <body>
   <header>
+    <h1>FizzBuzz Example</h1>
   </header>
   <main>
 
-    <h1>FizzBuzz Example</h1>
     <p>Based on numbers entered the output changes and if divisable by 3, 5, 15 and 105 special output is displayed</p>
-    <label for="numInput">Enter a number: </label><input  maxlength="8" data-bind="value: val, valueUpdate: 'afterkeyup'" name="numInput" id="numInput"/>
-    <p>Output: </p>
-    <strong class="" data-bind="text: output"></strong>
-    <a href="./spec.html">Test Results</a>
+
+    <form>
+      <fieldset>
+        <legend>FizzBuzz Input</legend>
+        <label for="numInput">Enter a number:</label>
+        <input maxlength="8" data-bind="value: val, valueUpdate: 'afterkeyup'" name="numInput" id="numInput"/>
+      </fieldset>
+    </form>
+
+    <p>
+      Output: <strong data-bind="text: output"></strong>
+    </p>
 
   </main>
   <footer>
+    Mimosa Skeleton provided to you by Hayden Taylor (http://github.com/h-taylor)
+    <a href="spec.html">View Tests</a>
   </footer>
 </body>
 </html>
