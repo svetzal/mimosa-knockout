@@ -12,21 +12,25 @@
     <h1>FizzBuzz Example</h1>
   </header>
   <main>
+
+    <p>Based on numbers entered the output changes and if divisable by 3, 5, 15 and 105 special output is displayed</p>
+
     <form>
-      <p>Based on numbers entered the output changes and if divisable by 3, 5, 15 and 105 special output is displayed</p>
       <fieldset>
-        <legend>Data Input</legend>
-        <label for="numInput">Enter a number: </label>
-        <input  maxlength="8" data-bind="value: val, valueUpdate: 'afterkeyup'" name="numInput" id="numInput"/>
+        <legend>FizzBuzz Input</legend>
+        <label for="numInput">Enter a number:</label>
+        <input maxlength="8" data-bind="value: val, valueUpdate: 'afterkeyup'" name="numInput" id="numInput"/>
       </fieldset>
     </form>
-    <p>Output:
-      <strong data-bind="text: output"></strong>
+
+    <p>
+      Output: <strong data-bind="text: output"></strong>
     </p>
-    <a href="spec.html">Test Results</a>
+
   </main>
   <footer>
-    <p>Mimosa - Knockoutjs Skeleton by: Hayden Taylor (http://github.com/h-taylor)</p>
+    Mimosa Skeleton provided to you by Hayden Taylor (http://github.com/h-taylor)
+    <a href="spec.html">View Tests</a>
   </footer>
 </body>
 </html>
