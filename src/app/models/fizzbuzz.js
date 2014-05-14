@@ -23,7 +23,7 @@ define(['models/decision','models/utilities'], function(Decision,Utilities) {
 			else if(utility.isLengthLessThanOne(inputValue)) {
 				output = "" + inputValue;
 			}
-			else if(utility.isEqualToASpace(inputValue)){
+			else if(utility.isEqualToASpace(inputValue)) {
 				output= "Not Valid Data";
 			}
 			else if(output === "") {
