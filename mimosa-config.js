@@ -3,7 +3,6 @@ exports.config = {
     "copy",
     "jshint",
     "csslint",
-    "server",
     "require",
     "minify-js",
     "minify-css",
