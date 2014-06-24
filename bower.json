@@ -1,9 +1,9 @@
 {
-  "name": "letsMakeIt",
-  "version": "0.0.0",
-  "homepage": "https://github.com/h-taylor/lets",
+  "name": "mimosa-knockout",
+  "version": "0.0.1",
+  "homepage": "http://github.com/h-taylor/mimosa-knockout",
   "authors": [
-    "hayden taylor <hxtaylor1@gmail.com>"
+    "hayden taylor <dev@hxtaylor.com>"
   ],
   "license": "MIT",
   "ignore": [
